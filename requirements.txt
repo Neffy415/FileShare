@@ -1,0 +1,20 @@
+# Flask Framework and Core Dependencies
+Flask==2.3.3
+Werkzeug==2.3.7
+
+# Database Dependencies
+Flask-SQLAlchemy==3.0.5
+SQLAlchemy==2.0.23
+psycopg2-binary==2.9.9
+
+# Authentication Dependencies
+Flask-Login==0.6.3
+
+# Utility Dependencies
+uuid
+
+# Development Dependencies (Optional)
+python-dotenv==1.0.0
+
+# Production Dependencies (Optional)
+gunicorn==21.2.0
