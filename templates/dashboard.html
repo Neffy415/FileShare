@@ -198,9 +198,7 @@
             padding: 0.5rem;
             font-family: monospace;
             word-break: break-all;
-        }
-
-        @media (max-width: 768px) {
+        }        @media (max-width: 768px) {
             .main-container {
                 margin: 1rem;
                 padding: 1rem;
@@ -213,6 +211,53 @@
             .btn-custom {
                 padding: 0.4rem 0.8rem;
                 font-size: 0.85rem;
+            }
+            
+            /* Restructure table for mobile */
+            .table thead {
+                display: none;
+            }
+            
+            .table tbody tr {
+                display: block;
+                border: 1px solid #dee2e6;
+                border-radius: 10px;
+                margin-bottom: 1rem;
+                padding: 1rem;
+                background: white;
+                box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            }
+            
+            .table tbody td {
+                display: block;
+                border: none;
+                padding: 0.5rem 0;
+                text-align: left !important;
+            }
+            
+            /* Filename section */
+            .table tbody td:first-child {
+                font-size: 1.1rem;
+                font-weight: 600;
+                margin-bottom: 0.75rem;
+                padding-bottom: 0.75rem;
+                border-bottom: 1px solid #f1f3f4;
+            }
+            
+            /* Upload date section */
+            .table tbody td:nth-child(2) {
+                margin-bottom: 1rem;
+                font-size: 0.9rem;
+            }
+            
+            /* Actions section - buttons below filename */
+            .table tbody td:last-child .d-flex {
+                flex-direction: column !important;
+                gap: 0.5rem !important;
+            }
+            
+            .table tbody td:last-child .btn {
+                width: 100%;
             }
         }
     </style>
